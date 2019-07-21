@@ -3,11 +3,7 @@ import { Table, Container } from 'react-bootstrap'
 import UserMenu from '../userProfile/UserMenu'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import {
-  AwesomeButton,
-  AwesomeButtonProgress,
-  AwesomeButtonSocial,
-} from 'react-awesome-button';
+
 export class UserTable extends Component {
   state = {
     userdata: []
@@ -52,7 +48,7 @@ export class UserTable extends Component {
                   <td>{data.password}</td>
                   <td>{data.email}</td>
                   <td>{data.date}</td>
-                  <td><Link type="primary" className="btn btn-raised btn-primary" to="/editprofile" params={data._id}>Edit</Link>
+                  <td><Link type="primary" className="btn btn-raised btn-primary" to="/edit" params={data._id}>Edit</Link>
                   <Link type="primary" className="btn btn-raised btn-danger" to="/delete" params={data._id}>Delete</Link></td>                </tr>
               ))}
             </tbody>

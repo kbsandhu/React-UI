@@ -159,7 +159,7 @@ export default
                     <Divider />
                     <br /><br /><br /><br />
                     <List style={{ backgroundColor: 'black', borderRadius: '25px', color: 'white' }}>
-                        <ListItem button href="/profile" key={"Home"}>
+                        <ListItem button component="a" href="/profile" key={"Home"}>
                             <ListItemIcon > <Home size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
                             <ListItemText primary={"Home"} />
                         </ListItem>
@@ -167,7 +167,7 @@ export default
                             <ListItemIcon> <AddCircle size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
                             <ListItemText primary={"Add New "} />
                         </ListItem>
-                        <ListItem button component="a" href="/editProfile" key={"Profile"}>
+                        <ListItem button component="a" href="/edit" key={"Profile"}>
                             <ListItemIcon> <UserDetail size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
                             <ListItemText primary={"Profile"} />
                         </ListItem>

@@ -12,6 +12,8 @@ import LandingPage from '../components/main/LandingPage';
 import UserProfile from '../components/userProfile/UserProfile'
 import UserMenu from '../components/userProfile/UserMenu'
 import AddForm from '../components/forms/AddUserForm'
+import EditForm from '../components/forms/EditUserForm'
+
 import UserTable from '../components/tables/UserTable'
 
 
@@ -34,6 +36,7 @@ const AppRouter = () => (
                 <Route path="/post" component={Posts} />
                 <Route path="/profile" component={UserTable} />
                 <Route path="/add" component={AddForm} />
+                <Route path="/edit" component={EditForm} />
 
 
                 <Route component={FileNotFound} />
