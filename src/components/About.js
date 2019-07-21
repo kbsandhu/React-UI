@@ -5,9 +5,6 @@ function About(props) {
   console.log(props);
   return <div className='About'>
   <Navigation></Navigation>
-
-    
-    
     About page {props.match.params.id}</div>;
 }
 

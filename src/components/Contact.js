@@ -7,17 +7,6 @@ class Contact extends React.Component {
         posts: []
     }
     componentDidMount() {
-        //  fetch('https://jsonplaceholder.typicode.com/posts')
-        //  .then(response => response.json())
-        //  .then(responseData=>{
-        //      this.setState({
-        //         posts:responseData
-        //      })
-        //      console.log(this.state.posts)
-        //  })
-        //  .catch(error=>{
-        //      console.log("Error Fetching Data")
-        //  })
         axios
             .get('https://jsonplaceholder.typicode.com/posts')
             .then(response => {

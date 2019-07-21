@@ -5,7 +5,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div className='Main'>
+      <div className='App'>
       <Navigation></Navigation>
       </div>
     );

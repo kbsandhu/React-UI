@@ -16,10 +16,10 @@ export class LandingPage extends Component {
               <a href="/register">Register</a>
               <a href="/about">About</a>
               <a href="/posts">Posts</a>
-              <a href="/contact">Contact</a>
+              <a href="/contact">Contacts</a>
             </Navigation>
           </Header>
-          <Drawer title="Men">
+          <Drawer title="Menu">
             <Navigation>
               <a href="/login">Login</a>
               <a href="/register">Register</a>
