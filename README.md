@@ -1,4 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Online Link to Client
+https://passwordmanager-kb-gs.herokuapp.com/
+##Deployed Link of Server
+https://password-manager-server-kb-gs.herokuapp.com/
+#TEAM MEMBER:
+Gurwinder Singh
+Kinderbeer Sandhu
+#INSTRUCTIONS
+We have deployed both Client & Server but,some functionality didnt work out with online server,
+therefore for now our client is fetching LOCAL API 
 
 ## Available Scripts
 
@@ -66,3 +76,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# PasswordManager-Client-React-

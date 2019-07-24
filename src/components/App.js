@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import Navigation from './Nav/Navigation'
 
 export class App extends Component {
 
   render() {
     return (
       <div className='App'>
-      <Navigation></Navigation>
       </div>
     );
   }

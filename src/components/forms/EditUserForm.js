@@ -10,7 +10,7 @@ export class UserTable extends Component {
   state = {
     userdata: []
   }
-  // componentDidMount() {
+ // componentDidMount() {
   //   const url = 'http://localhost:5000/api/websites/';
   //   axios({
   //     url: url,
@@ -23,7 +23,7 @@ export class UserTable extends Component {
   //       })
   //       console.log(response)
   //     })
-  // }
+  // } 
 
   render() {
     return (

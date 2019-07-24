@@ -22,6 +22,7 @@ import { UserDetail } from 'styled-icons/boxicons-solid/UserDetail'
 import { LogOut } from 'styled-icons/boxicons-regular/LogOut'
 import AddForm from './AddForm';
 import UserTable from '../tables/UserTable';
+import {Dashboard}from 'styled-icons/boxicons-solid/Dashboard'
 
 const drawerWidth = 200;
 
@@ -91,6 +92,9 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 export default
+
+
+
     function MiniDrawer() {
     const classes = useStyles();
     const theme = useTheme();
@@ -138,15 +142,18 @@ export default
                     </Toolbar>
                 </AppBar>
 
-                <Drawer variant="permanent"
+                <Drawer variant="permanent" style={{backgroundColor:'black'}}
                     className={clsx(classes.drawer, {
                         [classes.drawerOpen]: open,
                         [classes.drawerClose]: !open,
                     })}
                     classes={{
                         paper: clsx({
+                       
+                    
                             [classes.drawerOpen]: open,
                             [classes.drawerClose]: !open,
+                            backgroundColor:'black',
                         }),
                     }}
                     open={open}
@@ -159,19 +166,20 @@ export default
                     <Divider />
                     <br /><br /><br /><br />
                     <List style={{ backgroundColor: 'black', borderRadius: '25px', color: 'white' }}>
-                        <ListItem button component="a" href="/profile" key={"Home"}>
+                        <ListItem button component="a"  href="/" key={"Home"}>
                             <ListItemIcon > <Home size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
                             <ListItemText primary={"Home"} />
+                        </ListItem>
+                        <ListItem button component="a" href="/profile" key={"Profile"}>
+                            <ListItemIcon> <Dashboard size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
+                            <ListItemText primary={"Profile"} />
                         </ListItem>
                         <ListItem button component="a" href="/add" key={"Add"}>
                             <ListItemIcon> <AddCircle size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
                             <ListItemText primary={"Add New "} />
                         </ListItem>
-                        <ListItem button component="a" href="/edit" key={"Profile"}>
-                            <ListItemIcon> <UserDetail size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
-                            <ListItemText primary={"Profile"} />
-                        </ListItem>
-                        <ListItem button component="a" href="/logout" key={"LogOut"}>
+                        
+                        <ListItem button component="a" href="/logout"  key={"LogOut"} >
                             <ListItemIcon> <LogOut size="40" color="rgba(5,170,87,1)" /></ListItemIcon>
                             <ListItemText primary={"Log Out"} />
                         </ListItem>

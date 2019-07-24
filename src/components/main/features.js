@@ -20,11 +20,11 @@ export class Features extends Component {
                                 <Lock size="80" color="black" style={{ alignContent: 'center' }} />
                             </Col>
                         </Row>
-                        <Card.Body>
-                            <Card.Title>Card title</Card.Title>
+                        <Card.Body >
+                            <Card.Title style={{textAlign:'center'}}>Encrypted Passwords</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                              We are very concerned regarding your personal credentials thus we store your passwords in Encrypted form of data.
+                              Accessible only by you with Master Key
                            </Card.Text>
                         </Card.Body>
                     </Card>
@@ -35,9 +35,9 @@ export class Features extends Component {
                             </Col>
                         </Row>
                         <Card.Body>
-                            <Card.Title>Card title</Card.Title>
+                            <Card.Title  style={{textAlign:'center'}}>Two-Step Authentication </Card.Title>
                             <Card.Text>
-                                This card has supporting text below as a natural lead-in to additional content.
+                               We provide you the feature to protect your Credentials from a unwanted account access ,which you can view in read-able format by entering Master Password
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -47,11 +47,10 @@ export class Features extends Component {
                                 <UserLock size="80" color="black" style={{ alignContent: 'center' }} />
                             </Col>
                         </Row>                        <Card.Body>
-                            <Card.Title>Card title</Card.Title>
+                            <Card.Title  style={{textAlign:'center'}}>Accessible Anywhere</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to
-                                show that equal height action.
+                                In case you find it hard to remeber your credentials !,
+                                Just Create an account with us and start using our vault right now which can be accessed any where with logging In.
                              </Card.Text>
                         </Card.Body>
                     </Card>

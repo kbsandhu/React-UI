@@ -1,7 +1,5 @@
 import React from 'react';
-import Posts from './Posts';
 import axios from 'axios';
-import Navigation from './Nav/Navigation'
 class Contact extends React.Component {
     state = {
         posts: []
@@ -19,7 +17,6 @@ class Contact extends React.Component {
     }
     render() {
         return <div className='App'>
-            <Navigation></Navigation>
             {this.state.posts.map(post => (
                 <li key={post.id}>{post.title}</li>
             ))}

@@ -14,7 +14,8 @@ code {
 .mainHeading{
   font-family: 'DM Serif Display', serif;
   color:white;
-  font-size:2em;
+  font-family: 'Acme', sans-serif;
+  font-size:3em;
 }
 .landingBackground{
   background: rgb(2,0,36);
@@ -24,8 +25,21 @@ code {
   padding-top:10em;
   color:black;
 }
+.addPageLabels{
+  font-size:18px;
+  font-family: 'Acme', sans-serif;
+}
 .headStyle{
-  color:'black';
-  font-size:3em;
-  font-family: 'DM Serif Display', serif;
-  }
+  font-size:30px;
+  font-family: 'Acme', sans-serif;
+}
+.fontStyle{
+  font-family: 'Acme', sans-serif;
+  font-weight:lighter;
+  font-size: 15px;
+}
+.footer {  
+  margin-top: 100px;
+  padding-top:100px;
+  flex-shrink: 0; 
+}
